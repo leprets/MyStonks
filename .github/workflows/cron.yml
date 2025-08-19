@@ -12,6 +12,11 @@ concurrency:
   group: cron
   cancel-in-progress: true
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   cron:
     runs-on: ubuntu-latest
